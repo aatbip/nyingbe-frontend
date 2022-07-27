@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;700&family=Dongle:wght@300&family=Inter:wght@300&family=Karla&family=Montserrat:wght@300&family=Nunito+Sans&family=Poppins:wght@200&family=Press+Start+2P&family=Raleway:wght@300;400&family=Roboto:wght@300&family=Sedgwick+Ave&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;700&family=Dongle:wght@300&family=Edu+NSW+ACT+Foundation:wght@600&family=Inter:wght@300&family=Karla&family=Montserrat:wght@300&family=Nunito+Sans&family=Poppins:wght@200&family=Press+Start+2P&family=Raleway:wght@300;400&family=Roboto:wght@300&family=Sedgwick+Ave&family=Titan+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 100px;
+  margin-top: 20px;
+}
+
+section h1 {
+  font-size: 68px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+section h3 {
+  font-size: 40px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.user-dashboard {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.user-cards {
+  display: flex;
+  flex-direction: row;
+  row-gap: 70px;
+  column-gap: 80px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.btn-new {
+  padding: 4px 20px 4px 20px;
+  border: 4px rgb(74, 73, 73);
+  border-style: solid;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  transition-property: border-style;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  margin-top: 20px;
+}
+
+.btn-new:hover {
+  border-style: double;
+  cursor: pointer;
+}

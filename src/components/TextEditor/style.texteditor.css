@@ -1,0 +1,39 @@
+.text-editor {
+  margin-top: 20px;
+}
+
+.jodit-container {
+  margin-top: 10px;
+  padding: 0px;
+}
+
+.jodit-status-bar {
+  visibility: hidden;
+}
+
+.jodit-workplace {
+  padding: 10px;
+}
+
+.btn-save {
+  padding: 4px 20px 4px 20px;
+  border: 4px rgb(74, 73, 73);
+  border-style: solid;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  transition-property: border-style;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  margin-top: 20px;
+}
+
+.btn-save:hover {
+  border-style: double;
+  cursor: pointer;
+}
+
+.title-box {
+  padding: 5px;
+  width: 240px; 
+}

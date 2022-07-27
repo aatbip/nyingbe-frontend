@@ -1,0 +1,61 @@
+* {
+  list-style: 30px;
+}
+
+.signIn {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.signIn-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  min-width: 290px;
+}
+
+.signIn-form input {
+  padding: 4px 10px 4px 10px;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.signIn-form button {
+  padding: 4px 20px 4px 20px;
+  border: 7px rgb(32, 30, 30);
+  border-style: solid;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 700;
+  transition-property: border-style;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  margin-top: 20px;
+}
+
+.signIn-form button:hover {
+  border-style: double;
+  cursor: pointer;
+}
+
+.signIn-text {
+  margin: 0 auto;
+  line-height: 3em;
+}
+
+.register {
+  cursor: pointer;
+}
+
+.signin-msg {
+  margin: 0 auto;
+}
+
+.confetti {
+  margin: 0 auto;
+}

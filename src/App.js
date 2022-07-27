@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+//importing libraries
+import React from "react";
 
-function App() {
+//importing contexts
+import { AppContext } from "./contexts/appContexts/app.context";
+
+// importing components
+import { Navbar } from "./components/Navbar/Navbar";
+import { SignIn } from "./components/SignIn/SignIn";
+import { Body } from "./pages/Body";
+import { UserDashboard } from "./pages/UserDashboard";
+
+export const App = () => {
+  const { toggleSignIn, isSignedIn } = React.useContext(AppContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Navbar />
+      {isSignedIn ? <UserDashboard /> : toggleSignIn ? <SignIn /> : <Body />}
+    </main>
   );
-}
-
-export default App;
+};
