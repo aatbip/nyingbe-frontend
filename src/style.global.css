@@ -70,3 +70,7 @@ section h3 {
   border-style: double;
   cursor: pointer;
 }
+
+#admin-signature {
+  font-family: "Edu NSW ACT Foundation", cursive !important;
+}

@@ -8,6 +8,7 @@
 
 .card-title h3 {
   line-height: 1.4em;
+  margin-top: 30px;
 }
 
 .card-title h3:hover {
@@ -15,7 +16,7 @@
 }
 
 .card-content {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .card-content p {
@@ -26,6 +27,7 @@
 .delete-icon {
   width: 20px;
   height: 20px;
+  float: right;
 }
 
 .delete-icon:hover {

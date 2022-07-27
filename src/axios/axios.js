@@ -1,10 +1,10 @@
 import axios from "axios";
 
 //LOCAL
-// axios.defaults.baseURL = "http://localhost:5000/api";
+axios.defaults.baseURL = "http://localhost:5000/api";
 
 //SERVER
-axios.defaults.baseURL = "https://nyingbe-server.herokuapp.com/";
+// axios.defaults.baseURL = "https://nyingbe-server.herokuapp.com/";
 
 axios.interceptors.request.use(function (req) {
   const user = localStorage.getItem("user");
