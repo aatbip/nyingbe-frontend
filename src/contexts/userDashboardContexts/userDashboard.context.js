@@ -13,6 +13,7 @@ const initial_state = {
   textEditorTitle: "",
   isNoteEditable: "",
   isNoteDeleted: false,
+  isPublished: false,
 };
 
 const UserDashboardContext = React.createContext();
@@ -27,8 +28,7 @@ const UserDashboardProvider = ({ children }) => {
   const getAllNotes = (notes) => {
     try {
       dispatch({ type: "GET_ALL_NOTES", payload: notes });
-    } catch (e) {
-    }
+    } catch (e) {}
   };
 
   const toggleIsEditorOpen = () => {
@@ -76,9 +76,27 @@ const UserDashboardProvider = ({ children }) => {
   };
 
   const deleteNote = async (id) => {
+    console.log("delete");
     try {
       await axios.delete(`/notes/${id}`);
       dispatch({ type: "DELETE_NOTE" });
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
+  const publishNote = async (id) => {
+    try {
+      let { data } = await axios.get(`/notes/${id}`);
+      if (data.data.isPublished) {
+        await axios.patch(`/notes/publishnote/${id}`, {
+          isPublished: false,
+        });
+      } else
+        await axios.patch(`/notes/publishnote/${id}`, {
+          isPublished: true,
+        });
+      dispatch({ type: "PUBLISH_NOTE" });
     } catch (e) {
       console.log(e);
     }
@@ -96,6 +114,7 @@ const UserDashboardProvider = ({ children }) => {
         handleSignOut,
         openNote,
         deleteNote,
+        publishNote,
       }}
     >
       {children}

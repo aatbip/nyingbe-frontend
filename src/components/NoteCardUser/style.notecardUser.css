@@ -1,0 +1,42 @@
+.user-card {
+  width: 300px;
+  border: 2px solid black;
+  padding: 1.5em;
+  border-radius: 8px;
+  word-break: break-word;
+  margin-left: 4em;
+}
+
+@media (max-width: 380px) {
+  .user-card {
+    margin-left: 0em;
+  }
+}
+
+.user-card-title h3 {
+  line-height: 1.4em;
+  margin-top: 10px;
+}
+
+.user-card-title h3:hover {
+  cursor: pointer;
+}
+
+.user-card-content {
+  margin-top: 10px;
+}
+
+.user-card-content p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.delete-icon {
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+
+.delete-icon:hover {
+  cursor: pointer;
+}

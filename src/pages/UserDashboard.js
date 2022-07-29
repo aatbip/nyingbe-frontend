@@ -18,6 +18,7 @@ export const UserDashboard = () => {
     toggleIsEditorOpen,
     isEditorOpen,
     isNoteDeleted,
+    isPublished,
   } = React.useContext(UserDashboardContext);
 
   //Load App Context
@@ -40,7 +41,7 @@ export const UserDashboard = () => {
 
   React.useEffect(() => {
     fetchData();
-  }, [isSignedIn, isEditorOpen, isNoteDeleted]);
+  }, [isSignedIn, isEditorOpen, isNoteDeleted, isPublished]);
 
   const override = {
     display: "block",

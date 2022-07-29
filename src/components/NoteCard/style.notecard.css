@@ -33,3 +33,26 @@
 .delete-icon:hover {
   cursor: pointer;
 }
+
+.publish-button {
+  padding: 1px 10px 1px 10px;
+  border: 3px rgb(74, 73, 73);
+  border-style: solid;
+  background: transparent;
+  font-size: 10px;
+  font-weight: 500;
+  transition-property: border-style;
+  transition-duration: 1s;
+  transition-delay: 1s;
+  float: left;
+}
+
+.publish-button:hover {
+  border-style: double;
+  cursor: pointer;
+}
+
+#published-clicked {
+  background-color: black;
+  color: white;
+}

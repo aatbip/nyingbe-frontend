@@ -50,7 +50,14 @@ export const reducer = (state, action) => {
   if (action.type === "DELETE_NOTE") {
     return {
       ...state,
-      isNoteDeleted: true,
+      isNoteDeleted: !state.isNoteDeleted,
+    };
+  }
+  if (action.type === "PUBLISH_NOTE") {
+    console.log(state.isPublished); 
+    return {
+      ...state,
+      isPublished: !state.isPublished,
     };
   }
 };

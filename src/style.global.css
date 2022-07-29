@@ -19,12 +19,27 @@ main {
   width: 100%;
 }
 
+.body-container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 section {
   width: 80%;
   margin: 0 auto;
   padding: 20px;
   padding-top: 100px;
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+section img {
+  width: 380px;
+  height: auto;
 }
 
 section h1 {
@@ -33,7 +48,7 @@ section h1 {
 }
 
 section h3 {
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Edu NSW ACT Foundation", cursive;
 }
 
@@ -73,4 +88,26 @@ section h3 {
 
 #admin-signature {
   font-family: "Edu NSW ACT Foundation", cursive !important;
+}
+
+.body-content-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.modal-container {
+  padding-top: 20px; 
+}
+
+.modal-container img:hover {
+  cursor: pointer;
+}
+
+.modal-content {
+  padding-top: 20px; 
 }
